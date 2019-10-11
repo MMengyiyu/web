@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<script type="text/javascript">
+	function resetValue() {
+		document.getElementById("website").value="";
+		document.getElementById("url").value="";
+	}
+</script>
+<body>
+<form action="main.jsp" method="get">
+	<table>
+		<tr>
+			<td>站点名：</td>
+			<td><input type="text" id="website" name="name"></td>
+		</tr>
+		<tr>
+			<td>网站：</td>
+			<td><input type="text" id="url" name="url"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="提交"></td>
+			<td><button onclick="resetValue()">重置</button></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
